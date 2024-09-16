@@ -1,2 +1,2 @@
-# L-L-Legends
+# L&L Legends
 Map game
