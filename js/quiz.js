@@ -102,6 +102,7 @@ class Quiz {
         // Odstranění všech markerů a polyline z předchozí otázky
         if (this.#guessMarker) {
             this.#map.removeLayer(this.#guessMarker);
+            this.#guessMarker = null;
         }
         if (this.#correctMarker) {
             this.#map.removeLayer(this.#correctMarker);
