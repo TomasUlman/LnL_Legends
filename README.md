@@ -25,7 +25,7 @@ L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat rů
 * Pixabay – zdroj obrázků (https://pixabay.com/)<br>
 
 <br>**JavaScript** <br><br>
-**#app.js** <br>
+<br> **#app.js** <br>
 Tento soubor obsahuje hlavní aplikační logiku napsanou v objektově orientovaném přístupu (OOP) pomocí třídy App. Hlavní funkcionalita aplikace je řízena touto třídou.
 
 **Konstruktor třídy:** <br>
@@ -47,7 +47,7 @@ Předá relevantní data do instance třídy Quiz, která je zodpovědná za jed
 Interakce s Local Storage: <br>
 Skóre pro jednotlivé kvízy je uloženo do localStorage. Uživatel může resetovat všechna skóre přes tlačítko v uživatelském modálu.
 
-**#quiz.js** <br>
+<br> **#quiz.js** <br>
 Třída Quiz řídí celou herní logiku. Při vytvoření instance třídy se provádí řada akcí, jako je inicializace mapy, načtení otázek a spuštění časovače.
 
 **Konstruktor třídy:**
@@ -81,7 +81,7 @@ Třída Quiz řídí celou herní logiku. Při vytvoření instance třídy se p
 * _formatTime(seconds): Převádí čas ze sekund na formát minut a sekund (mm:ss).
 * _formatDistance(distance): Převádí vzdálenost na formát km/m.
 
-**#question.js** <br>
+<br> **#question.js** <br>
 Tato třída je pro ukládání a organizaci informací o otázkách v kvízu. Instance této třídy jsou vytvářeny pro každý jednotlivý obrázek a umístění v kvízu a jsou předávány do třídy Quiz, která pracuje s otázkami.
 
 **Konstruktor třídy:**
@@ -89,7 +89,7 @@ Tato třída je pro ukládání a organizaci informací o otázkách v kvízu. I
 * coords: Pole obsahující souřadnice ve formátu [latitude, longitude], které představují správnou odpověď na otázku (místo na mapě).
 * name: Název místa, které je na obrázku zobrazeno. 
 
-**#quizData.js** <br>
+<br> **#quizData.js** <br>
 Tento soubor slouží jako databáze pro kvízy v aplikaci. Obsahuje definice mapových stylů, specifikace jednotlivých kvízů včetně jejich parametrů a otázek a pole všech kvízů (quizzes), které v aplikaci zobrazí třída app.js.
 
 **Styly map**
