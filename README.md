@@ -1,6 +1,6 @@
 **L&L Legends**
 
-**Popis projektu:** <br>
+**Popis projektu:** <br><br>
 L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat různá místa na světě. Hra nabízí kvízy s různými úrovněmi obtížnosti a specifickými pravidly pro každý kvíz. Hráč uvidí obrázek daného místa a jeho úkolem je umístit marker na mapu na místo, kde si myslí, že se daná lokace nachází. Hra vyhodnocuje přesnost tipu na základě vzdálenosti od správné pozice a rychlosti, s jakou hráč odpoví.
 
 **Herní mechanismus:** 
@@ -11,7 +11,7 @@ L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat rů
 * Hra se vyhodnocuje na základě vzdálenosti tipu od správné pozice a času, který uplynul při tipování.
 * Po dokončení kvízu se zobrazí souhrn, včetně animace a celkového skóre.
 
-**Instalace:** <br>
+**Instalace:** 
 * Naklonujte tento repozitář: **git clone https://github.com/TomasUlman/LnL_Legends.git**<br>
 * Přejděte do složky projektu: **cd LnL_Legends**<br>
 * Otevřete soubor **index.html** v prohlížeči.<br>
@@ -24,15 +24,15 @@ L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat rů
 * CartoDB – zdroj mapových dat (https://carto.com/attributions)<br>
 * Pixabay – zdroj obrázků (https://pixabay.com/)<br>
 
-**JavaScript (app.js)**
+**JavaScript (app.js)** <br><br>
 Tento soubor obsahuje hlavní aplikační logiku napsanou v objektově orientovaném přístupu (OOP) pomocí třídy App. Hlavní funkcionalita aplikace je řízena touto třídou.
 
-**Konstruktor třídy:**
-Po inicializaci třídy se spustí metoda _renderQuizList, která dynamicky vykreslí seznam kvízů na základě dat z pole quizzes.<br>
-Události pro interakci uživatele jsou navázány na různé prvky:<br>
-Kliknutí na tlačítko pro výběr kvízu.<br>
-Kliknutí na ikonu uživatele pro otevření/uzavření uživatelského modálu.<br>
-Resetování skóre pro všechny kvízy.<br>
+**Konstruktor třídy:** <br>
+* Po inicializaci třídy se spustí metoda _renderQuizList, která dynamicky vykreslí seznam kvízů na základě dat z pole quizzes.
+* Události pro interakci uživatele jsou navázány na různé prvky: 
+** Kliknutí na tlačítko pro výběr kvízu.
+** Kliknutí na ikonu uživatele pro otevření/uzavření uživatelského modálu.
+** Resetování skóre pro všechny kvízy.
 
 Metody:
 _selectQuiz(e): Tato metoda detekuje, který kvíz uživatel vybral na základě datasetu tlačítka "Play" a spustí vybraný kvíz.
