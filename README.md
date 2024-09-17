@@ -4,17 +4,17 @@
 L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat různá místa na světě. Hra nabízí kvízy s různými úrovněmi obtížnosti a specifickými pravidly pro každý kvíz. Hráč uvidí obrázek daného místa a jeho úkolem je umístit marker na mapu na místo, kde si myslí, že se daná lokace nachází. Hra vyhodnocuje přesnost tipu na základě vzdálenosti od správné pozice a rychlosti, s jakou hráč odpoví.
 
 **Herní mechanismus:** <br>
-* Hráč si v menu vybere kvíz a klikne na tlačítko „Play“.<br>
-* Po načtení se zobrazí obrázek určitého místa a hráč má za úkol označit jeho polohu na mapě.<br>
-* Po potvrzení tipu se zobrazí správná pozice, čára spojující hráčův tip a správnou pozici, a informace o vzdálenosti a skóre.<br>
-* Hráč pokračuje na další otázku kliknutím na tlačítko „Next“.<br>
-* Hra se vyhodnocuje na základě vzdálenosti tipu od správné pozice a času, který uplynul při tipování.<br>
-* Po dokončení kvízu se zobrazí souhrn, včetně animace a celkového skóre.<br>
+* Hráč si v menu vybere kvíz a klikne na tlačítko „Play“.
+* Po načtení se zobrazí obrázek určitého místa a hráč má za úkol označit jeho polohu na mapě.
+* Po potvrzení tipu se zobrazí správná pozice, čára spojující hráčův tip a správnou pozici, a informace o vzdálenosti a skóre.
+* Hráč pokračuje na další otázku kliknutím na tlačítko „Next“.
+* Hra se vyhodnocuje na základě vzdálenosti tipu od správné pozice a času, který uplynul při tipování.
+* Po dokončení kvízu se zobrazí souhrn, včetně animace a celkového skóre.
 
 **Instalace:** <br>
-Naklonujte tento repozitář: **git clone https://github.com/TomasUlman/LnL_Legends.git**<br>
-Přejděte do složky projektu: **cd LnL_Legends**<br>
-Otevřete soubor **index.html** v prohlížeči.<br>
+* Naklonujte tento repozitář: **git clone https://github.com/TomasUlman/LnL_Legends.git**<br>
+* Přejděte do složky projektu: **cd LnL_Legends**<br>
+* Otevřete soubor **index.html** v prohlížeči.<br>
 
 **Použité technologie:** <br>
 JavaScript (OOP)<br>
