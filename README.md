@@ -29,10 +29,10 @@ Tento soubor obsahuje hlavní aplikační logiku napsanou v objektově orientova
 
 **Konstruktor třídy:** <br>
 * Po inicializaci třídy se spustí metoda _renderQuizList, která dynamicky vykreslí seznam kvízů na základě dat z pole quizzes.
-* Události pro interakci uživatele jsou navázány na různé prvky: 
-** Kliknutí na tlačítko pro výběr kvízu.
-** Kliknutí na ikonu uživatele pro otevření/uzavření uživatelského modálu.
-** Resetování skóre pro všechny kvízy.
+* Události pro interakci uživatele jsou navázány na různé prvky: <br>
+* Kliknutí na tlačítko pro výběr kvízu.
+* Kliknutí na ikonu uživatele pro otevření/uzavření uživatelského modálu.
+* Resetování skóre pro všechny kvízy.
 
 Metody:
 _selectQuiz(e): Tato metoda detekuje, který kvíz uživatel vybral na základě datasetu tlačítka "Play" a spustí vybraný kvíz.
