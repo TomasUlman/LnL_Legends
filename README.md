@@ -3,7 +3,7 @@
 **Popis projektu:** <br>
 L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat různá místa na světě. Hra nabízí kvízy s různými úrovněmi obtížnosti a specifickými pravidly pro každý kvíz. Hráč uvidí obrázek daného místa a jeho úkolem je umístit marker na mapu na místo, kde si myslí, že se daná lokace nachází. Hra vyhodnocuje přesnost tipu na základě vzdálenosti od správné pozice a rychlosti, s jakou hráč odpoví.
 
-**Herní mechanismus:** <br>
+**Herní mechanismus:** 
 * Hráč si v menu vybere kvíz a klikne na tlačítko „Play“.
 * Po načtení se zobrazí obrázek určitého místa a hráč má za úkol označit jeho polohu na mapě.
 * Po potvrzení tipu se zobrazí správná pozice, čára spojující hráčův tip a správnou pozici, a informace o vzdálenosti a skóre.
@@ -16,13 +16,13 @@ L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat rů
 * Přejděte do složky projektu: **cd LnL_Legends**<br>
 * Otevřete soubor **index.html** v prohlížeči.<br>
 
-**Použité technologie:** <br>
-JavaScript (OOP)<br>
-HTML & CSS<br>
-Leaflet knihovna – interaktivní mapy (https://leafletjs.com/)<br>
-OpenStreetMap - zdroj mapových dat (https://www.openstreetmap.org/copyright)<br>
-CartoDB – zdroj mapových dat (https://carto.com/attributions)<br>
-Pixabay – zdroj obrázků (https://pixabay.com/)<br>
+**Použité technologie:**
+* JavaScript (OOP)
+* HTML & CSS<br>
+* Leaflet knihovna – interaktivní mapy (https://leafletjs.com/)<br>
+* OpenStreetMap - zdroj mapových dat (https://www.openstreetmap.org/copyright)<br>
+* CartoDB – zdroj mapových dat (https://carto.com/attributions)<br>
+* Pixabay – zdroj obrázků (https://pixabay.com/)<br>
 
 **JavaScript (app.js)**
 Tento soubor obsahuje hlavní aplikační logiku napsanou v objektově orientovaném přístupu (OOP) pomocí třídy App. Hlavní funkcionalita aplikace je řízena touto třídou.
