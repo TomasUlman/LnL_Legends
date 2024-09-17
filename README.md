@@ -99,19 +99,19 @@ Tento soubor slouží jako databáze pro kvízy v aplikaci. Obsahuje definice ma
 **Kvízy** <br>
 exampleQuiz { <br>
   quizCardData: { <br>
-    name: Název kvízu (Europe Cities 1) <br>
-    level: Úroveň obtížnosti (Easy) <br>
-    lvlColor: Barva úrovně obtížnosti (green) <br>
-    imgUrl: URL obrázku pro kvíz <br>
-    mapStyle: Styl mapy (Blind) <br>
+    name: Název kvízu (Europe Cities 1), <br>
+    level: Úroveň obtížnosti (Easy), <br>
+    lvlColor: Barva úrovně obtížnosti, (green) <br>
+    imgUrl: URL obrázku pro kvíz, <br>
+    mapStyle: Styl mapy (Blind,) <br>
 }, <br>
-  questions: Pole otázek s obrázky měst v Evropě a jejich geografickými souřadnicemi. <br>
-  id: Identifikátor kvízu <br>
-  map: URL mapy <br>
-  mapPosition: Poziční střed mapy ([latitude, longitude]) <br>
-  minZoomLevel: Minimální úroveň přiblížení mapy <br>
+  questions: Pole otázek s obrázky měst v Evropě a jejich geografickými souřadnicemi, <br>
+  id: Identifikátor kvízu, <br>
+  map: URL mapy, <br>
+  mapPosition: Poziční střed mapy, ([latitude, longitude]) <br>
+  minZoomLevel: Minimální úroveň přiblížení mapy, <br>
   maxZoomLevel: Maximální úroveň přiblížení mapy <br>
-  dragging: Povolení/zakázání posouvání mapy <br>
-  timer: Časovač v sekundách <br>
-  referenceDistance: Referenční vzdálenost pro výpočet přesnosti odpovědí <br>
-}
+  dragging: Povolení/zakázání posouvání mapy, <br>
+  timer: Časovač v sekundách, <br>
+  referenceDistance: Referenční vzdálenost pro výpočet přesnosti odpovědí, <br>
+};
