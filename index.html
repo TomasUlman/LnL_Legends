@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="Images/Logo.png" />
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/elfalem/Leaflet.curve/leaflet.curve.js"></script>
+    <!-- Custom files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/question.js"></script>
+    <script defer src="js/quiz.js"></script>
+    <script defer src="js/quizData.js"></script>
+    <script defer src="js/app.js"></script>
+    <title>L&L Legends</title>
+</head>
+
+<body>
+
+    <!-- Logo's -->
+    <div class="menu_logo">
+        <img src="/Images/Logo.png" alt="Logo">
+    </div>
+
+    <!-- User icon -->
+    <div class="user_info">
+        <!-- <span class="level_span">Level 5</span>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+        </div> -->
+        <img class="user_icon" src="/Images/User-icon.png" alt="User">
+    </div>
+
+    <!-- Quiz list -->
+    <div class="quiz_list_container"></div>
+
+    <!-- Loader -->
+    <div class="loader_container">
+        <div class="loader">
+            <img src="Images/marker.png" alt="Icon">
+        </div>
+    </div>
+
+    <!-- Container kde probíhá kvíz -->
+    <div class="quiz_container">
+
+        <div class="sidebar">
+            <div class="quiz_logo">
+                <img src="/Images/Logo.png" alt="Logo">
+            </div>
+
+            <div class="hint_container">
+                <img class="hint_img" src="" alt="">
+            </div>
+
+            <div class="quiz_bar">
+                <div class="timer"></div>
+
+                <div class="total_score">Total Score: <span id="total_score">200</span></div>
+
+                <div class="exit_quiz_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#eeeeee"
+                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z" />
+                    </svg>
+                    <span class="tooltip_text">Quit quiz?</span>
+                </div>
+            </div>
+
+            <p class="quiz_copyright"> &copy; Copyright by Tomáš Ulman</p>
+            <p class="map_data_copyright">
+                Map data &copy;
+                <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors &
+                <a href="https://carto.com/attributions" target="_blank">CARTO</a> |
+                Created with <a href="https://leafletjs.com/" target="_blank">Leaflet</a>
+            </p>
+        </div>
+
+        <!-- Mapa -->
+        <div id="map"></div>
+
+    </div>
+
+    <!-- Modál score otázky -->
+    <div class="score_modal hidden">
+        <button class="btn_next">Next >></button>
+        <div class="score_tab">
+            <div class="place_name"><span id="place_name"></span></div>
+            <div>Distance: &ensp;<span id="distance_span"></span></div>
+            <div>Time left: &ensp;<span id="guess_time"></span></div>
+            <div>Score earned: &ensp;<span id="guess_score"></span></div>
+        </div>
+    </div>
+    <div class="score_overlay hidden"></div>
+
+    <!-- Modál shrnutí kvízu -->
+    <div class="summary_modal">
+        <button class="close_summary_modal">&times;</button>
+        <div class="summary_content">
+            <div class="circle">
+                <div class="checkmark"></div>
+            </div>
+            <p class="summary_text">Quiz complete</p>
+            <div class="summary_score_line">Total score: &ensp;<span class="summary_score"></span></div>
+        </div>
+    </div>
+    <div class="summary_overlay hidden"></div>
+
+    <!-- User modál -->
+    <div class="user_modal">
+        <button class="close_user_modal">&times;</button>
+        <button class="reset_app_btn">Reset app</button>
+    </div>
+    <div class="user_overlay hidden"></div>
+
+    <p class="copyright" id="menu_copyright" style="margin-top: 1rem;"> &copy; Copyright by Tomáš Ulman</p>
+
+</body>
+
+</html>
