@@ -1,4 +1,4 @@
-#L&L Legends
+**L&L Legends**
 
 **Popis projektu:** <br>
 L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat různá místa na světě. Hra nabízí kvízy s různými úrovněmi obtížnosti a specifickými pravidly pro každý kvíz. Hráč uvidí obrázek daného místa a jeho úkolem je umístit marker na mapu na místo, kde si myslí, že se daná lokace nachází. Hra vyhodnocuje přesnost tipu na základě vzdálenosti od správné pozice a rychlosti, s jakou hráč odpoví.
@@ -24,7 +24,8 @@ L&L Legends je interaktivní hra s mapou, kde hráči zkoušejí lokalizovat rů
 * CartoDB – zdroj mapových dat (https://carto.com/attributions)<br>
 * Pixabay – zdroj obrázků (https://pixabay.com/)<br>
 
-**JavaScript (app.js)** <br><br>
+**JavaScript** <br><br>
+**#app.js** <br>
 Tento soubor obsahuje hlavní aplikační logiku napsanou v objektově orientovaném přístupu (OOP) pomocí třídy App. Hlavní funkcionalita aplikace je řízena touto třídou.
 
 **Konstruktor třídy:** <br>
