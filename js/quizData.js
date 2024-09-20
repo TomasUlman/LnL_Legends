@@ -281,7 +281,7 @@ const czechCities = {
     id: 'czechCities',
     map: blindMap,
     mapPosition: [49.8175, 15.4730],
-    minZoomLevel: 7.4,
+    minZoomLevel: 6,
     maxZoomLevel: 9,
     dragging: true,
     timer: 60,
@@ -290,16 +290,16 @@ const czechCities = {
 
 const testQuiz = {
     quizCardData: {
-        name: 'Test world quiz',
+        name: 'Test Quiz',
         level: 'Easy',
         lvlColor: 'green',
         imgUrl: 'Images/World.jpg',
         mapStyle: 'Blind',
     },
     questions: [
-        new Question('Images/testWorldQuiz/eiffel tower.jpg', [48.8584, 2.2945], 'eiffel tower'),
-        new Question('Images/testWorldQuiz/statue of liberty.jpg', [40.6892, -74.0445], 'statue of liberty'),
-        new Question('Images/testWorldQuiz/hollywood.jpg', [34.1341, -118.3216], 'hollywood')
+        new Question('Images/testQuiz/eiffel tower.jpg', [48.8584, 2.2945], 'eiffel tower'),
+        new Question('Images/testQuiz/statue of liberty.jpg', [40.6892, -74.0445], 'statue of liberty'),
+        new Question('Images/testQuiz/hollywood.jpg', [34.1341, -118.3216], 'hollywood')
     ],
     id: 'quiz001',
     map: blindMap,

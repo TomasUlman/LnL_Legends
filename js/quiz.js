@@ -1,6 +1,7 @@
 'use strict';
 
 const questionImage = document.querySelector('.hint_img');
+const questionImageSub = document.querySelector('.hint_img_sub');
 const timer = document.querySelector('.timer');
 const scoreModal = document.querySelector(".score_modal");
 const scoreOverlay = document.querySelector(".score_overlay");
@@ -53,7 +54,7 @@ class Quiz {
     #correctMarker;
     #polyline;
     #confirmPosition; // Funkce
-    #totalScore = 200;
+    #totalScore = 0;
 
     constructor(id, questionSet, mapStyle, mapPositon, minZoomLevel, maxZoomLevel, dragging, timer, referenceDistance) {
         this.id = id; // ID kvízu
@@ -96,8 +97,19 @@ class Quiz {
 
     _runQuestion(question, runNextQuestion) {
         // Nastavení obrázku z otázky
-        questionImage.src = question.image;
-        questionImage.alt = question.name;
+        this._loadImage(question.image)
+            .then(() => {
+                questionImage.style.display = 'block';
+                questionImageSub.style.display = 'none';
+                this.#timerInterval = setInterval(tick, 1000);
+            })
+            .catch(err => {
+                console.error(err);
+                questionImage.style.display = 'none';
+                questionImageSub.style.display = 'block';
+                questionImageSub.textContent = question.name;
+                this.#timerInterval = setInterval(tick, 1000);
+            });
 
         // Odstranění všech markerů a polyline z předchozí otázky
         if (this.#guessMarker) {
@@ -154,12 +166,6 @@ class Quiz {
             // Po každém ticku aktualizuje timer
             timer.textContent = this._formatTime(timeLeft);
         };
-
-        // Timer se spustí až po načtení obrázku
-        questionImage.onload = () => {
-            // Spustí timer
-            this.#timerInterval = setInterval(tick, 1000);
-        }
 
         // Funkce kliknutí na tlačítko potvrzení guess markeru
         this.#confirmPosition = (e) => {
@@ -449,6 +455,20 @@ class Quiz {
         const timeScore = (maxTimeScore * (time / this.timer));
 
         return Math.round(distanceScore + timeScore); // Zaokrouhlené skóre
+    }
+
+    _loadImage(imgPath) {
+        return new Promise(function (resolve, reject) {
+            questionImage.src = imgPath;
+
+            questionImage.addEventListener('load', function () {
+                resolve(questionImage);
+            });
+
+            questionImage.addEventListener('error', function () {
+                reject(new Error('Image not found'));
+            });
+        });
     }
 
     _closeSummaryModal() {
