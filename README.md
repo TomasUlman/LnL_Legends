@@ -72,6 +72,7 @@ Třída Quiz řídí celou herní logiku. Při vytvoření instance třídy se p
 * _storeQuizScore(): Uloží skóre kvízu do local storage. 
 * _quitQuiz(): Ukončí kvíz a obnoví výchozí stav stránky.
 * _clearMap(): Vyčistí mapu a odstraní všechny vrstvy z mapy.
+* _loadImage(): Načte obrázek otázky nebo vrátí error. 
 
 **Výpočetní metody:**
 * _calcDistance(): Haversinova metoda výpočtu vzdálenosti mezi markery (výsledek je v metrech)
