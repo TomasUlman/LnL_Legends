@@ -264,12 +264,20 @@ body {
     width: 70%;
     height: 18rem;
     overflow: hidden;
+    text-align: center;
 }
 
 .hint_container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.hint_img_sub {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    position: relative;
+    top: 30%;
 }
 
 /* QUIZ BAR */
@@ -796,6 +804,13 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .hint_img_sub {
+        color: var(--secondary-color);
+        font-size: 1rem;
+        position: relative;
+        top: 30%;
     }
 
     .quiz_bar {
